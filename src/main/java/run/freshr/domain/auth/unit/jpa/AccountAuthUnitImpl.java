@@ -17,6 +17,7 @@ public class AccountAuthUnitImpl implements AccountAuthUnit {
   private final AccountAuthRepository repository;
 
   @Override
+  @Transactional
   public String create(Account entity) {
     return repository.save(entity).getId();
   }
