@@ -4,13 +4,11 @@ import jakarta.persistence.EntityNotFoundException;
 import java.util.Optional;
 import java.util.stream.StreamSupport;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.transaction.annotation.Transactional;
 import run.freshr.common.annotations.Unit;
 import run.freshr.domain.auth.redis.AccessRedis;
 import run.freshr.domain.auth.repository.redis.AccessRedisRepository;
 
-@Slf4j
 @Unit
 @RequiredArgsConstructor
 @Transactional(readOnly = true)

@@ -4,13 +4,11 @@ import jakarta.persistence.EntityNotFoundException;
 import java.time.LocalDateTime;
 import java.util.Optional;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.transaction.annotation.Transactional;
 import run.freshr.common.annotations.Unit;
 import run.freshr.domain.auth.redis.RsaPair;
 import run.freshr.domain.auth.repository.redis.RsaPairRepository;
 
-@Slf4j
 @Unit
 @RequiredArgsConstructor
 @Transactional(readOnly = true)

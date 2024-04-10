@@ -2,13 +2,11 @@ package run.freshr.domain.auth.unit.jpa;
 
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.transaction.annotation.Transactional;
 import run.freshr.common.annotations.Unit;
 import run.freshr.domain.account.entity.Account;
 import run.freshr.domain.auth.repository.jpa.AccountAuthRepository;
 
-@Slf4j
 @Unit
 @RequiredArgsConstructor
 @Transactional(readOnly = true)
